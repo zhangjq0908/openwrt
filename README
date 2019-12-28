@@ -9,7 +9,8 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
 
 3. git clone https://github.com/Lienol/openwrt 命令下载好源代码，然后 cd openwrt 进入目录
 
-4. ./scripts/feeds update -a 
+4. ./scripts/feeds clean
+   ./scripts/feeds install -a
    ./scripts/feeds install -a
    make menuconfig 
 
